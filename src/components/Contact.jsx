@@ -3,7 +3,6 @@ import { motion } from "framer-motion"
 import emailjs from '@emailjs/browser'
 
 import { styles } from "../styles"
-import Earth from "./canvas/Earth"
 import { SectionWrapper } from "../hoc"
 import { slideIn } from "../utils/motion"
 import { EarthCanvas } from "./canvas"
@@ -13,8 +12,33 @@ const Contact = () => {
   const [form, setForm] = useState({ name:'', email:'', message:'' });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+
+    setForm({
+      ...form,
+      [name]: value
+    })
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, {
+      from_name: form.name,
+      from_email: form.email,
+      message: form.message,
+      to_name: 'Azizbek',
+      to_email: 'khan.ak33.ak47@gmail.com'
+    }, import.meta.env.VITE_EMAILJS_PUBLIC_KEY).then(() => {
+      setLoading(false);
+      setForm({ name:'', email:'', message:'' });
+      alert("Thanks! I will get back to you soon");
+    },(error) => {
+      setLoading(false);
+      alert("Something went wrong. Please try again later");
+    })
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
