@@ -1,7 +1,5 @@
-import Tilty from "react-tilty"
 import { motion } from "framer-motion"
 import { styles } from "../styles"
-import { github } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { projects } from "../constants"
 import { fadeIn, textVariant } from "../utils/motion"
@@ -19,7 +17,7 @@ const Works = () => {
           variants={fadeIn("","",0.1,1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aperiam a delectus maxime nostrum accusamus illum nam sint? Porro saepe eos voluptas ducimus. Maiores necessitatibus totam, aut libero dolore numquam?
+          I'm always eager to learn new technologies and enlarge my knowledge. Currently I'm learning React Native in order to start development of my own startup. For most of the projects I was interested to create the apps with my own BE and FE in order to fully understand how the big apps work.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

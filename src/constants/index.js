@@ -3,26 +3,25 @@ import {
     backend,
     creator,
     web,
-    javascript,
     typescript,
-    html,
-    css,
     reactjs,
     redux,
-    tailwind,
-    nodejs,
-    mongodb,
     git,
-    figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    mysql,
+    nextjs,
+    php,
+    magento,
+    graphql,
+    upwork,
+    scandiweb,
+    cloudStorage,
+    mongodb,
+    blogMern,
+    webchat,
+    sneakers,
+    ecommerceApp,
+    mealsToGo
   } from "../assets";
 
   export const navLinks = [
@@ -42,7 +41,7 @@ import {
 
   const services = [
     {
-      title: "Web Developer",
+      title: "Frontend Developer",
       icon: web,
     },
     {
@@ -54,23 +53,31 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Mentor",
       icon: creator,
     },
   ];
 
   const technologies = [
     {
-      name: "HTML 5",
-      icon: html,
+      name: "Next JS",
+      icon: nextjs,
     },
     {
-      name: "CSS 3",
-      icon: css,
+      name: "PHP",
+      icon: php,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
+      name: "MySql",
+      icon: mysql,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "Magento",
+      icon: magento,
     },
     {
       name: "TypeScript",
@@ -85,28 +92,12 @@ import {
       icon: redux,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "graphql",
+      icon: graphql,
     },
     {
       name: "docker",
@@ -117,90 +108,103 @@ import {
   const experiences = [
     {
       title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      company_name: "Freelance",
+      icon: upwork,
+      iconBg: "#FFFFFF",
+      date: "March 2021 - November 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Creating simple landing pages for local companies using HTML, CSS and JS",
+        "Linking the Frontend with WordPress CMS platform",
+        "Creating simple apps for customer loyalty system"
+      ],
+    },
+    {
+      title: "ReactJS Developer",
+      company_name: "scandiweb",
+      icon: scandiweb,
+      iconBg: "#cf0b0c",
+      date: "February 2022 - September 2022",
+      points: [
+        "Maintaining ScandiPWA theme for Magento 2",
+        "Fixing bugs in ScandiPWA",
+        "ScandiPWA migration for Magento 2.4.4 version ",
+      ],
+    },
+    {
+      title: "Fullstack Developer",
+      company_name: "scandiweb",
+      icon: scandiweb,
+      iconBg: "#cf0b0c",
+      date: "September 2022 - Present",
+      points: [
+        "Creating modules for Magento 2 in order to make extensions compatible with ScandiPWA",
+        "Creating PWA solutions for Amasty, Mageplaza Adobe vendors",
+        "Creating extensions and plugins for ScandiPWA",
+        "Creating the website app for Panhomestores company using ScandiPWA and Magento 2 <a href='https://www.panhomestores.com/' target='blank'>www.panhomestores.com</a>, creating custom modules for CRM solution and Loyalty system",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Team Lead/Mentor",
+      company_name: "scandiweb",
+      icon: scandiweb,
+      iconBg: "#cf0b0c",
+      date: "January 2023 - April 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Leading a small team of 4 developers, helping with some blockers, delegating new tasks",
+        "Mentoring newcomers",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
-
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
 
   const projects = [
     {
-      name: "Car Rent",
+      name: "Meals App (WIP)",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "WIP. React Native app with restaurants and cafes locations and descriptions, ability to pay with stripe payments.",
+      tags: [
+        {
+          name: "react native",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "stripe",
+          color: "green-text-gradient",
+        },
+        {
+          name: "google maps",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: mealsToGo,
+      source_code_link: "https://github.com/AzizKHAN030/MealsToGo",
+    },
+    {
+      name: "Cloud Storage",
+      description:
+        "Web application that allows the user to store files in cloud. Ability to register users, login, moving the files to cart and etc.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "postgres sql",
+          color: "green-text-gradient",
+        },
+        {
+          name: "nestjs",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: cloudStorage,
+      source_code_link: "https://github.com/AzizKHAN030/cloud-storage",
+    },
+    {
+      name: "Blog App",
+      description:
+        "Web application that allows users to post posts and articles, shows CRUD functionality using MERN stack. Besides that authentication and authorization also is made",
       tags: [
         {
           name: "react",
@@ -211,55 +215,93 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "express",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: blogMern,
+      source_code_link: "https://github.com/AzizKHAN030/blog-mern",
     },
     {
-      name: "Job IT",
+      name: "Web chat app",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A real-time web chat for sending messages to the room members.",
+      tags: [
+        {
+          name: "express",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "react",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "socket.io",
+          color: "green-text-gradient",
+        },
+      ],
+      image: webchat,
+      source_code_link: "https://github.com/AzizKHAN030/webchat-react-socketio",
+    },
+    {
+      name: "React sneakers app",
+      description:
+        "A simple ecommerce plp app with ability to add items to cart and wishlist",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
+          name: "mockapi",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: sneakers,
+      source_code_link: "https://github.com/AzizKHAN030/React-Sneakers",
     },
     {
-      name: "Trip Guide",
+      name: "Ecommerce app",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Ecommerce app with PDP and PLP implementation, with ability to change the configurations, currency and etc",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
+          name: "graphql",
           color: "pink-text-gradient",
         },
+        {
+          name: "redux",
+          color: "green-text-gradient",
+        },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: ecommerceApp,
+      source_code_link: "https://github.com/AzizKHAN030/EcommerceApp",
+    },
+    {
+      name: "Ecommerce app",
+      description:
+        "Ecommerce app with PDP and PLP implementation, with ability to change the configurations, currency and etc",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "graphql",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "redux",
+          color: "green-text-gradient",
+        },
+      ],
+      image: ecommerceApp,
+      source_code_link: "https://github.com/AzizKHAN030/EcommerceApp",
     },
   ];
 
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };

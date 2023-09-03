@@ -1,4 +1,5 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component"
+import ReactHtmlParser from 'react-html-parser'; 
 
 const ExperienceCard = ({experience:{date, iconBg,icon, company_name,title, points}}) => {
   return (
@@ -25,7 +26,7 @@ const ExperienceCard = ({experience:{date, iconBg,icon, company_name,title, poin
         </div>
         <ul className="mt-5 list-disc ml-5 space-y-2">
             {points.map((point, index) => (
-                <li key={`exp-point-${index}`} className="text-white text-[14px] pl-1 tracking-wider">{point}</li>
+                <li key={`exp-point-${index}`} className="text-white text-[14px] pl-1 tracking-wider [&>a]:text-[#915eff]">{ReactHtmlParser(point)}</li>
             ))}
         </ul>
     </VerticalTimelineElement>

@@ -24,13 +24,13 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, {
+    emailjs.send('service_v5f90cf', 'template_gknbqjb', {
       from_name: form.name,
       from_email: form.email,
       message: form.message,
       to_name: 'Azizbek',
       to_email: 'khan.ak33.ak47@gmail.com'
-    }, import.meta.env.VITE_EMAILJS_PUBLIC_KEY).then(() => {
+    }, '-dha4BsHWAt7fHc7b').then(() => {
       setLoading(false);
       setForm({ name:'', email:'', message:'' });
       alert("Thanks! I will get back to you soon");

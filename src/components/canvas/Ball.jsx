@@ -1,9 +1,10 @@
-import React,{Suspense} from 'react'
+import React,{Suspense, useContext, useEffect} from 'react'
 import { Canvas } from '@react-three/fiber'
-import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei'
+import { Decal, Float, OrbitControls, Preload, useProgress, useTexture } from '@react-three/drei'
 
 import CanvasLoader from '../Loader'
 import { AmbientLight } from 'three'
+import { ModelsContext } from '../../context/ModelsStatus.context'
 
 const Ball = ({imgUrl}) => {
   const [decal] = useTexture([imgUrl])
