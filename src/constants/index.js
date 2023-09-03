@@ -18,7 +18,7 @@ import {
     cloudStorage,
     mongodb,
     blogMern,
-    webchat,
+    webchatApp,
     sneakers,
     ecommerceApp,
     mealsToGo
@@ -240,7 +240,7 @@ import {
           color: "green-text-gradient",
         },
       ],
-      image: webchat,
+      image: webchatApp,
       source_code_link: "https://github.com/AzizKHAN030/webchat-react-socketio",
     },
     {
@@ -259,27 +259,6 @@ import {
       ],
       image: sneakers,
       source_code_link: "https://github.com/AzizKHAN030/React-Sneakers",
-    },
-    {
-      name: "Ecommerce app",
-      description:
-        "Ecommerce app with PDP and PLP implementation, with ability to change the configurations, currency and etc",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "graphql",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "redux",
-          color: "green-text-gradient",
-        },
-      ],
-      image: ecommerceApp,
-      source_code_link: "https://github.com/AzizKHAN030/EcommerceApp",
     },
     {
       name: "Ecommerce app",

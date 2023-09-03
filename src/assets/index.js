@@ -4,8 +4,12 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import linkedin from "./linkedin.png";
+import phone from "./phone.png";
+import cv from "./cv.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import email from "./email.png";
 
 import docker from "./tech/docker.png";
 import git from "./tech/git.png";
@@ -24,7 +28,7 @@ import scandiweb from "./company/scandiweb.webp";
 
 import cloudStorage from "./cloudStorage.png";
 import blogMern from "./BlogMern.png";
-import webchat from './webchat.png'
+import webchatApp from './webchatt.png'
 import sneakers from './sneackers.png'
 import ecommerceApp from './exommerceApp.png'
 import mealsToGo from './mealsToGo.png'
@@ -53,8 +57,12 @@ export {
   scandiweb,
   cloudStorage,
   blogMern,
-  webchat,
+  webchatApp,
   sneakers,
   ecommerceApp,
-  mealsToGo
+  mealsToGo,
+  linkedin,
+  phone,
+  cv,
+  email
 };

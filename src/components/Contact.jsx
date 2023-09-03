@@ -6,6 +6,7 @@ import { styles } from "../styles"
 import { SectionWrapper } from "../hoc"
 import { slideIn } from "../utils/motion"
 import { EarthCanvas } from "./canvas"
+import { cv, email, github, linkedin, phone } from "../assets"
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -45,6 +46,44 @@ const Contact = () => {
       <motion.div variants={slideIn("left","tween",0.2,1)} className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <div>
+        <ul className="flex flex-wrap">
+  <li className="mb-1 w-full sm:w-1/2">
+    <a href="linkedin.com/in/azizbek-rasulov-982717228" target="_blank" className="flex items-center">
+      <span className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2">
+        <img src={linkedin} className="w-[80%] h-[80%] object-contain" />
+      </span> Linkedin
+    </a>
+  </li>
+  <li className="mb-1 w-full sm:w-1/2">
+    <a href="tel:+998903590066" className="flex items-center">
+      <span className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2">
+        <img src={phone} className="w-[80%] h-[80%] object-contain" />
+      </span>
+      +998903590066
+    </a>
+  </li>
+  <li className="mb-1 w-full sm:w-1/2">
+    <a href="mailto: khan.ak33.ak47@gmail.com" rel="noreferrer" className="flex items-center">
+      <span className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2">
+        <img src={email} className="w-[80%] h-[80%] object-contain" />
+      </span>
+      Email
+    </a>
+  </li>
+  <li className=" mb-1 w-full sm:w-1/2">
+    <a href="/cv.pdf" className="flex items-center" target="_blank">
+      <span className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2">
+        <img src={cv} className="w-[80%] h-[80%] object-contain" />
+      </span>
+      CV
+    </a>
+  </li>
+</ul>
+
+
+
+        </div>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
