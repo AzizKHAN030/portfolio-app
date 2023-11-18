@@ -32,6 +32,8 @@ import webchatApp from './webchatt.png'
 import sneakers from './sneackers.png'
 import ecommerceApp from './exommerceApp.png'
 import mealsToGo from './mealsToGo.png'
+import portion from './portion.jpeg'
+import globeWhite from './globe-white.png'
 
 export {
   logo,
@@ -64,5 +66,7 @@ export {
   linkedin,
   phone,
   cv,
-  email
+  email,
+  portion,
+  globeWhite
 };

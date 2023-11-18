@@ -21,7 +21,8 @@ import {
     webchatApp,
     sneakers,
     ecommerceApp,
-    mealsToGo
+    mealsToGo,
+    portion
   } from "../assets";
 
   export const navLinks = [
@@ -159,6 +160,28 @@ import {
   ];
 
   const projects = [
+    {
+      name: "Notion App Clone",
+      description:
+        "Clone of Notion.so app using NextJS, having basic functionality and maximum resemblance to the original app",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "zustand",
+          color: "green-text-gradient",
+        },
+        {
+          name: "convex",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: portion,
+      source_code_link: "https://github.com/AzizKHAN030/portion-app",
+      demo_link: "https://portion-mkq1l07vf-azizkhan030.vercel.app/"
+    },
     {
       name: "Meals App (WIP)",
       description:

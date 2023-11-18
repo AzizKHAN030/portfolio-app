@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
 import { fadeIn } from '../utils/motion'
 import Tilty from 'react-tilty'
-import { github } from '../assets'
+import { github, globeWhite } from '../assets'
 
-const ProjectCard = ({project:{ name, description, tags, image, source_code_link}, index}) => {
+const ProjectCard = ({project:{ name, description, tags, image, source_code_link, demo_link}, index}) => {
   return (
     <motion.div
         variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
@@ -28,6 +28,14 @@ const ProjectCard = ({project:{ name, description, tags, image, source_code_link
                     >
                         <img src={github} alt="github" className='w-1/2 h-1/2 object-contain'/>
                     </div>
+                    {demo_link && (
+                        <div
+                            onClick={()=>window.open(demo_link,"_blank")}
+                            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                        >
+                            <img src={globeWhite} alt="demo" className='w-1/2 h-1/2 object-contain'/>
+                        </div>
+                    )}
                 </div>
             </div>
             <div className='mt-5'>
